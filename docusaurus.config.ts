@@ -5,20 +5,22 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
+import { myCustomApiMdGenerator } from './utils.ts';
 
 const config: Config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://skaplan-dev.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "skaplan-dev", // Usually your GitHub org/user name.
+  projectName: "Docusaurus-test", // Usually your repo name.
 
   presets: [
     [
@@ -70,7 +72,7 @@ const config: Config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "Petstore API",
+            label: "Contacts",
             position: "left",
             to: "/docs/category/petstore-api",
           },
@@ -139,16 +141,7 @@ const config: Config = {
           ],
         },
         languageTabs: [
-          {
-            highlight: "python",
-            language: "python",
-            logoClass: "python",
-          },
-          {
-            highlight: "bash",
-            language: "curl",
-            logoClass: "bash",
-          },
+
           {
             highlight: "csharp",
             language: "csharp",
@@ -196,18 +189,21 @@ const config: Config = {
         id: "openapi",
         docsPluginId: "classic",
         config: {
-          petstore: {
-            specPath: "examples/petstore.yaml",
-            outputDir: "docs/petstore",
-            downloadUrl:
-              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-              categoryLinkSource: "tag",
-            },
-          } satisfies OpenApiPlugin.Options,
-        } satisfies Plugin.PluginOptions,
+        contacts: {
+          specPath: "examples/contacts-v3.json",
+          outputDir: "docs/contacts/v3",
+          sidebarOptions: {
+            groupPathsBy: "tag",
+            categoryLinkSource: "tag",
+          },
+          label: "Contacts",
+          baseUrl: "contacts",
+          markdownGenerators: {
+            createApiPageMD: myCustomApiMdGenerator
+          }
+        } satisfies OpenApiPlugin.Options,
       },
+    } satisfies Plugin.PluginOptions,
     ],
   ],
 

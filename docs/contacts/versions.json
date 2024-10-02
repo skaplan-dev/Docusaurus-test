@@ -1,0 +1,12 @@
+[
+  {
+    "version": "v3",
+    "label": "v3",
+    "baseUrl": "v3"
+  },
+  {
+    "version": "v1",
+    "label": "v1",
+    "baseUrl": "v1"
+  }
+]

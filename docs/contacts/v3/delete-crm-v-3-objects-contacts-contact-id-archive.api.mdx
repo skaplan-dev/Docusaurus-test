@@ -1,0 +1,516 @@
+---
+id: delete-crm-v-3-objects-contacts-contact-id-archive
+title: "Archive"
+description: "Move an Object identified by `{contactId}` to the recycling bin."
+sidebar_label: "Archive"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "delete api-method"
+info_path: docs/contacts/v3/contacts
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Archive"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/crm/v3/objects/contacts/{contactId}"}
+>
+  
+</MethodEndpoint>
+
+| Tier | Description |
+  | ---- | ----- |
+  | marketing | FREE | 
+| sales | FREE | 
+| service | FREE | 
+| cms | FREE | 
+      
+
+Move an Object identified by `{contactId}` to the recycling bin.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"contactId","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"default"}
+        value={"default"}
+      >
+        <div>
+          
+          
+          An error occurred.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"*/*"}
+              value={"*/*"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"subCategory"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A specific category that contains more specific detail about the error"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                context
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              Context about the error condition
+                              
+                              
+                            </div><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      property name*
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       string[]
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    string
+                                    
+                                    
+                                  </div><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"correlationId"}
+                        required={true}
+                        schemaName={"uuid"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A unique identifier for the request. Include this value with any error reports or support tickets","format":"uuid","example":"aeb5f871-7f07-4993-9211-075dc63e7cbf"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                links
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              A map of link names to associated URIs containing documentation about the error or recommended remediation steps
+                              
+                              
+                            </div><SchemaItem
+                              name={"property name*"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                              collapsible={false}
+                              discriminator={false}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"A human readable message describing the error along with remediation steps where appropriate","example":"Invalid input (details will vary based on the error)"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"category"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","description":"The error category","example":"VALIDATION_ERROR"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                errors
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              further information about the error
+                              
+                              
+                            </div><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"subCategory"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"A specific category that contains more specific detail about the error"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"code"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"The status code associated with the error detail"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"in"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"The name of the field or parameter in which the error was found."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      context
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    Context about the error condition
+                                    
+                                    
+                                  </div><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            property name*
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             string[]
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <li>
+                                          <div
+                                            style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                          >
+                                            Array [
+                                          </div>
+                                        </li><div
+                                          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                        >
+                                          
+                                          
+                                          string
+                                          
+                                          
+                                        </div><li>
+                                          <div
+                                            style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                          >
+                                            ]
+                                          </div>
+                                        </li>
+                                      </div>
+                                    </details>
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"message"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","description":"A human readable message describing the error along with remediation steps where appropriate"}}
+                            >
+                              
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"Invalid input (details will vary based on the error)\",\n  \"correlationId\": \"aeb5f871-7f07-4993-9211-075dc63e7cbf\",\n  \"category\": \"VALIDATION_ERROR\",\n  \"links\": {\n    \"knowledge-base\": \"https://www.hubspot.com/products/service/knowledge-base\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

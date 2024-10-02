@@ -1,0 +1,247 @@
+---
+id: contacts
+title: "Contacts"
+description: ""
+sidebar_label: Introduction
+sidebar_position: 0
+hide_title: true
+custom_edit_url: null
+---
+
+import ApiLogo from "@theme/ApiLogo";
+import Heading from "@theme/Heading";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+import Export from "@theme/ApiExplorer/Export";
+
+<span
+  className={"theme-doc-version-badge badge badge--secondary"}
+  children={"Version: v3"}
+>
+</span>
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Contacts"}
+>
+</Heading>
+
+
+
+
+
+<div
+  style={{"marginBottom":"2rem"}}
+>
+  <Heading
+    id={"authentication"}
+    as={"h2"}
+    className={"openapi-tabs__heading"}
+    children={"Authentication"}
+  >
+  </Heading><SchemaTabs
+    className={"openapi-tabs__security-schemes"}
+  >
+    <TabItem
+      label={"OAuth 2.0: oauth2_legacy"}
+      value={"oauth2_legacy"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                oauth2
+              </td>
+            </tr><tr>
+              <th>
+                OAuth Flow (authorizationCode):
+              </th><td>
+                <p>
+                  Token URL: https://api.hubapi.com/oauth/v1/token
+                </p><p>
+                  Authorization URL: https://app.hubspot.com/oauth/authorize
+                </p><span>
+                  Scopes:
+                </span><ul>
+                  <li>
+                    crm.objects.custom.read: View custom object records
+                  </li><li>
+                    tickets: Read and write tickets
+                  </li><li>
+                    crm.objects.goals.read: Read goals
+                  </li><li>
+                    media_bridge.read: Read media and media events
+                  </li><li>
+                    crm.objects.custom.write: Change custom object records
+                  </li><li>
+                    e-commerce: e-commerce
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"OAuth 2.0: oauth2"}
+      value={"oauth2"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                oauth2
+              </td>
+            </tr><tr>
+              <th>
+                OAuth Flow (authorizationCode):
+              </th><td>
+                <p>
+                  Token URL: https://api.hubapi.com/oauth/v1/token
+                </p><p>
+                  Authorization URL: https://app.hubspot.com/oauth/authorize
+                </p><span>
+                  Scopes:
+                </span><ul>
+                  <li>
+                    crm.objects.listings.read: Read listings
+                  </li><li>
+                    crm.objects.contacts.read:  
+                  </li><li>
+                    crm.objects.orders.read: Read Orders
+                  </li><li>
+                    crm.objects.services.read: Read services
+                  </li><li>
+                    crm.objects.quotes.read: Quotes
+                  </li><li>
+                    crm.objects.orders.write: Write orders
+                  </li><li>
+                    crm.objects.carts.read: Read carts
+                  </li><li>
+                    crm.objects.subscriptions.read: Read Commerce Subscriptions
+                  </li><li>
+                    crm.objects.leads.write: Modify lead objects
+                  </li><li>
+                    crm.objects.commercepayments.read: Read the COMMERCE_PAYMENT object.
+                  </li><li>
+                    crm.objects.users.write: Write User CRM objects
+                  </li><li>
+                    crm.objects.contacts.write:  
+                  </li><li>
+                    crm.objects.companies.write:  
+                  </li><li>
+                    crm.objects.listings.write: Write listings
+                  </li><li>
+                    crm.objects.line_items.write: Line Items
+                  </li><li>
+                    crm.objects.deals.write:  
+                  </li><li>
+                    crm.objects.partner-clients.read: View Partner Client CRM objects
+                  </li><li>
+                    crm.objects.invoices.read: Read invoices objects
+                  </li><li>
+                    crm.objects.deals.read:  
+                  </li><li>
+                    crm.objects.courses.read: Read courses
+                  </li><li>
+                    crm.objects.line_items.read: Line Items
+                  </li><li>
+                    crm.objects.services.write: Write services
+                  </li><li>
+                    crm.objects.appointments.write: Write appointments
+                  </li><li>
+                    crm.objects.leads.read: Read lead objects
+                  </li><li>
+                    crm.objects.partner-clients.write: Modify Partner Client CRM objects
+                  </li><li>
+                    crm.objects.appointments.read: Read appointments
+                  </li><li>
+                    crm.objects.companies.read:  
+                  </li><li>
+                    crm.objects.users.read: Read User CRM objects
+                  </li><li>
+                    crm.objects.quotes.write: Quotes
+                  </li><li>
+                    crm.objects.courses.write: Write courses
+                  </li><li>
+                    crm.objects.carts.write: Write cart
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"API Key: private_apps_legacy"}
+      value={"private_apps_legacy"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                private-app-legacy
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"API Key: private_apps"}
+      value={"private_apps"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                private-app
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem>
+  </SchemaTabs>
+</div>
+      
